@@ -30,13 +30,15 @@ $result = mysqli_query($con, $sql);
 
 while($r = mysqli_fetch_array($result)) {
 
+    $ii = '"'.$r['name'].'"';
+
     echo 
     
     "<div class='" . $r['collection'] . "' id='beat'>
     
         <div class='beatTitle' id='" . $r['collection'] . "'>" . $r['name'] . "</div>
     
-        <img src='images/" . $r['collection'] . ".png' onclick='playPause(" . $i . ")'>
+        <img src='images/" . $r['collection'] . ".png' onclick='playPause(" . $i . "," . $ii . ")'>
     
         <div class='beatCollection'>The " . $r['collection'] . " collection | " . $r['genre'] . " beat</div>
 
