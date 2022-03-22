@@ -1,0 +1,263 @@
+/* GENERAL CSS */
+
+@font-face {
+    font-family: MainFont;
+    src: url(fonts/Bahnschrift.TTF);
+}
+
+body {
+    margin: 0;
+    font-family: MainFont;
+    overflow: hidden scroll;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0px 0px 20px 0px;
+}
+
+p {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* HEADER SECTION */
+
+.headerSection {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: black;
+}
+
+#logo {
+    background-image: url(images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    top: 60vh;
+    color: white;
+    background-color: black;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    z-index: 900;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0px 30px 0px 30px;
+}
+
+/* ABOUT SECTION */
+
+.aboutContainer {
+    width: 100vw;
+    height: 30vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.aboutHeader {
+    width: 85vw;
+    height: 14vh;
+    line-height: 14vh;
+    margin: 0px 0px 20px 15vw;
+}
+
+.infoContainer {
+    height: 26vh;
+}
+
+.aboutLine {
+    position: absolute;
+    margin-left: 10vw;
+    width: 10vw;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(0,0,255) 0%, rgba(0,0,128) 100%);
+}
+
+.infoText {
+    margin-left: 25vw;
+    width: 65vw;
+}
+
+/* TIER SECTION */
+
+.tierContainer {
+    height: 60vh;
+    width: 99vw;
+    margin: 10vw 0pc 0pc 1vw;
+    text-align: center;
+}
+
+div.tier {
+    display: inline-block;
+    width: 14%;
+    margin: 0pc 4% 0px 4%;
+    height: 100%;
+    box-shadow: -14px -14px black, inset 0px 0px 60px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.5s;
+}
+
+div.tier:hover {
+    transform: scale(1.05);
+}
+
+#tier1 {
+    background: linear-gradient(315deg, rgba(166,102,65,1) 0%, rgba(242,176,119,1) 100%);
+}
+
+#tier2 {
+    background: linear-gradient(315deg, rgba(166,166,166,1) 0%, rgba(217,217,217,1) 100%);
+}
+
+#tier3 {
+    background: linear-gradient(315deg, rgba(217,158,50,1) 0%, rgba(242,199,68,1) 100%);
+}
+
+#tier4 {
+    background: linear-gradient(315deg, rgba(40,157,217,1) 0%, rgba(117,197,222,1) 100%);
+}
+
+.tierName {
+    color: white;
+    font-weight: normal;
+    margin: -12px 0px 0px -6px;
+    text-align: left;
+}
+
+.tierInfo {
+    color: white;
+    text-align: left;
+    position: absolute;
+    width: 13vw;
+}
+
+li.tier {
+    display: list-item;
+    list-style-type: disc; 
+    margin: 20px 0px 0px 40px;
+}
+
+p.priceClarification {
+    text-align: right;
+    margin-right: 10vw;
+    margin-top: 6vh;
+}
+
+/* BEAT SECTION HEADER */
+
+.sortContainer {
+    width: 80vw;
+    height: 100px;
+    margin: 6vw 0pc 0pc 10vw;
+    text-align: center;
+}
+
+.tagsBtnContainer {
+    float: left;
+    width: fit-content;
+    height: 100%;
+}
+
+.tagsBtn {
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: fit-content;
+    padding: 6px 18px 6px 18px;
+    background: linear-gradient(135deg, rgba(0,0,255) 0%, rgba(0,0,128) 100%);
+}
+
+div.standardPremium {
+    position: absolute;
+    height: 100px;
+    width: 80vw;
+    text-align: center;
+}
+
+h1.standardPremium {
+    line-height: 100px;
+}
+
+b {
+    margin: 0px 30px 0px 30px;
+}
+
+.sortBtnContainer {
+    float: right;
+    width: fit-content;
+    height: 100%;
+}
+
+.sortBtn {
+    position: relative;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    width: fit-content;
+    padding: 6px 18px 6px 18px;
+    background: linear-gradient(135deg, rgba(0,0,255) 0%, rgba(0,0,128) 100%);
+}
+
+p.btn {
+    color: white;
+}
+
+/* SORT */
+
+.sortSystemContainer {
+    text-align: left;
+    position: absolute;
+    top: 290vh;
+    left: 10vw;
+}
+
+button {
+    background-color: transparent;
+    border: solid 1px rgb(180, 180, 180);
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    margin-left: 10px;
+    padding: 4px;
+}
+
+input {
+    margin-bottom: 10px;
+}

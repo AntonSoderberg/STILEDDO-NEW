@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="beatStyle.css">
+
+    <title>STILEDDO</title>
+
+</head>
+
+<body>
+
+<!-- HEADER SECTION -->
+
+<div class="headerSection">
+
+    <div id="logo"></div>
+
+    <nav id="nav">
+
+        <ul>
+
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>PRICING</li>
+            <li>BEATS</li>
+
+        </ul>
+
+    </nav>
+
+</div>
+
+<!-- ABOUT SECTION -->
+
+<div class="aboutContainer">
+
+    <h1 class="aboutHeader">
+
+        ABOUT ME
+
+    </h1>
+
+    <div class="infoContainer">
+
+        <div class="aboutLine"></div>
+
+        <p class="infoText">
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos fugit voluptas dolore modi ut consequatur numquam illum! Amet architecto temporibus vero natus et rem est quae voluptatibus? Error ut iure eius, ipsa alias autem voluptatum, ex voluptates, sequi fugit saepe quaerat corporis laborum repudiandae hic iusto eveniet nobis accusantium commodi quae labore facere non modi a! Exercitationem, est rerum?
+
+        </p>
+
+    </div>
+
+</div>
+
+<div class="aboutContainer">
+
+    <h1 class="aboutHeader">
+
+        ABOUT THE BEATS
+
+    </h1>
+
+    <div class="infoContainer">
+
+        <div class="aboutLine"></div>
+
+        <p class="infoText">
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos fugit voluptas dolore modi ut consequatur numquam illum! Amet architecto temporibus vero natus et rem est quae voluptatibus? Error ut iure eius, ipsa alias autem voluptatum, ex voluptates, sequi fugit saepe quaerat corporis laborum repudiandae hic iusto eveniet nobis accusantium commodi quae labore facere non modi a! Exercitationem, est rerum?
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- TIER SECTION -->
+
+<div class="tierContainer">
+
+    <div class="tier" id="tier1">
+
+        <h1 class="tierName">
+
+            BRONZE <br>
+            €10 / €20
+
+        </h1>
+
+        <div class="tierInfo">
+
+            <ul>
+                
+                <li class="tier">.MP3 file</li>
+                <li class="tier">Basic beat assembly</li>
+                <li class="tier">Must credit stileddo</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="tier" id="tier2">
+
+        <h1 class="tierName">
+
+            SILVER <br>
+            €20 / €30
+
+        </h1>
+
+        <div class="tierInfo">
+
+            <ul class="tier">
+
+                <li class="tier">.WAV file</li>
+                <li class="tier">Advanced beat assembly</li>
+                <li class="tier">Help with mixing</li>
+                <li class="tier">Must credit stileddo</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="tier" id="tier3">
+
+        <h1 class="tierName">
+
+            GOLD <br>
+            €40 / €50
+
+        </h1>
+
+        <div class="tierInfo">
+
+            <ul class="tier">
+
+                <li class="tier">.WAV file</li>
+                <li class="tier">Full beat assembly</li>
+                <li class="tier">Help with mixing</li>
+                <li class="tier">Personal contact with me to ensure a high quality product</li>
+                <li class="tier">Must credit stileddo</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="tier" id="tier4">
+
+        <h1 class="tierName">
+
+            DIAMOND <br>
+            €-- / €100
+
+        </h1>
+
+        <div class="tierInfo">
+
+            <ul class="tier">
+
+                <li class="tier">.WAV file</li>
+                <li class="tier">Full beat assembly</li>
+                <li class="tier">Help with mixing</li>
+                <li class="tier">Personal contact with me to ensure a high quality product</li>
+                <li class="tier">Beat will be removed from the website</li>
+                <li class="tier">Must credit stileddo</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <p class="priceClarification">*Standard price / Premium price</p>
+
+</div>
+
+<!-- BEAT SECTION HEADER -->
+
+<div class="sortContainer">
+
+    <div class="tagsBtnContainer">
+
+        <div class="tagsBtn">
+
+            <p class="btn">
+
+                TAGS
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="standardPremium">
+
+        <h1 class="standardPremium">
+
+            STANDARD <b>&#8213</b> PREMIUM
+
+        </h1>
+
+    </div>
+
+    <div class="sortBtnContainer">
+
+        <div class="sortBtn">
+
+            <p class="btn">
+
+                SORT BY
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- SORT -->
+
+<div class="sortSystemContainer">
+
+    <h2>Genre</h2>
+
+    <form id="genre"></form>
+    
+    <br>
+    
+    <h2>Mood<button onclick="resetMood()">&#10005</button></h2>
+    
+    <form id="mood"></form>
+    
+    <br>
+    
+    <h2>Instrument<button onclick="resetInstrument()">&#10005</button></h2>
+    
+    <form id="instrument"></form>
+    
+    <br>    
+
+</div>
+
+<!-- BEAT SECTION -->
+
+<div id="result"></div>
+
+</body>
+
+<script src="js/nav.js"></script>
+<script src="js/getTags.js"></script>
+<script src="js/getMusic.js"></script>
+<script src="js/playMusic.js"></script>
+</html>
