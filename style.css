@@ -128,7 +128,7 @@ li {
 .tierContainer {
     height: 60vh;
     width: 99vw;
-    margin: 14vh 0px 2vh 2vw;
+    margin: 14vh 0px 2vh 1.5vw;
     text-align: center;
 }
 
@@ -287,6 +287,10 @@ input {
     border: none;
     font-size: 18px;
     margin: 0px 20px 0px 20px;
+}
+
+.pageBtn:hover {
+    cursor: pointer;
 }
 
 #pPage {
