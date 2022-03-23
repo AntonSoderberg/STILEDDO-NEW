@@ -6,7 +6,7 @@ $data = ($_GET['data']);
 
 $dataArray = (explode(",",$data));
 
-$sql = "SELECT * FROM `music` WHERE `genre` = '$dataArray[0]' AND `mood` = '$dataArray[1]' AND `instrument` = '$dataArray[2]'";
+$sql = "SELECT * FROM `music` WHERE `genre` = '$dataArray[0]' AND `mood` = '$dataArray[1]' AND `instrument` = '$dataArray[2]' LIMIT 5 OFFSET $dataArray[3]";
 
 $i = 0;
 

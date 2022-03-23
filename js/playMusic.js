@@ -12,7 +12,7 @@ function playPause(i, ii) {
 
         audio = new Audio("music/" + ii + ".mp3")
         audio.play()
-        audio.volume = 0.4
+        audio.volume = 0.5
         
         break;
 

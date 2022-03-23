@@ -1,14 +1,16 @@
-var gCount = 0
-var gTag = ""
-var mCount = 0
-var mTag = ""
-var iCount = 0
-var iTag = ""
+let gCount = 0
+let gTag = ""
+let mCount = 0
+let mTag = ""
+let iCount = 0
+let iTag = ""
+let offset = 0
 
 function genreTag(str) {
 
     gCount = 1
     gTag = str
+    offset = 0
 
     fetchMusic()
 
@@ -18,6 +20,7 @@ function moodTag(str) {
 
     mCount = 1
     mTag = str
+    offset = 0
 
     fetchMusic()
 
@@ -29,6 +32,7 @@ function resetMood() {
 
     mCount = 0
     mTag = ""
+    offset = 0
 
     fetchMusic()
 
@@ -38,6 +42,7 @@ function instrumentTag(str) {
 
     iCount = 1
     iTag = str
+    offset = 0
 
     fetchMusic()
 
@@ -49,7 +54,35 @@ function resetInstrument() {
 
     iCount = 0
     iTag = ""
+    offset = 0
 
+    fetchMusic()
+
+}
+
+function previousPage() {
+    
+    if (offset > 1) {
+        
+        offset -= 5
+    
+        fetchMusic()
+
+        if (offset == 0) {
+            
+            document.getElementById("pPage").style.opacity = "0.5"
+
+        }
+
+    }
+}
+
+function nextPage() {
+    
+    offset += 5
+
+    document.getElementById("pPage").style.opacity = "1"
+    
     fetchMusic()
 
 }
@@ -57,7 +90,7 @@ function resetInstrument() {
 function fetchMusic() {
 
     let tagCount = gCount + mCount + iCount
-    let data = [gTag, mTag, iTag]
+    let data = [gTag, mTag, iTag, offset]
 
     let result = document.getElementById("result")
 

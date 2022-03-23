@@ -8,7 +8,7 @@
     color: white;
     position: absolute;
     width: 65vw;
-    top: 290vh;
+    top: 285vh;
     left: 25vw;
 }
 
@@ -22,7 +22,7 @@ img {
 #beat {
     height: 80px;
     box-shadow: inset 0px 0px 60px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .beatTitle {

@@ -242,13 +242,13 @@
     
     <br>
     
-    <h2>Mood<button onclick="resetMood()">&#10005</button></h2>
+    <h2>Mood<button onclick="resetMood()" id="filterBtn">&#10005</button></h2>
     
     <form id="mood"></form>
     
     <br>
     
-    <h2>Instrument<button onclick="resetInstrument()">&#10005</button></h2>
+    <h2>Instrument<button onclick="resetInstrument()" id="filterBtn">&#10005</button></h2>
     
     <form id="instrument"></form>
     
@@ -259,6 +259,13 @@
 <!-- BEAT SECTION -->
 
 <div id="result"></div>
+
+<!-- PAGES -->
+
+<div class="pages">
+    <button class="pageBtn" id="pPage" onclick="previousPage()">PREVIOUS PAGE</button>
+    <button class="pageBtn" onclick="nextPage()">NEXT PAGE</button>
+</div>
 
 </body>
 

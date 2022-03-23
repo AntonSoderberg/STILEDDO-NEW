@@ -35,6 +35,14 @@ p {
     margin: 0;
 }
 
+button {
+    font-family: MainFont;
+}
+
+form {
+    font-size: 18px;
+}
+
 /* HEADER SECTION */
 
 .headerSection {
@@ -120,7 +128,7 @@ li {
 .tierContainer {
     height: 60vh;
     width: 99vw;
-    margin: 10vw 0pc 0pc 1vw;
+    margin: 14vh 0px 2vh 2vw;
     text-align: center;
 }
 
@@ -244,11 +252,13 @@ p.btn {
 .sortSystemContainer {
     text-align: left;
     position: absolute;
-    top: 290vh;
+    top: 285vh;
     left: 10vw;
+    padding-bottom: 4vh;
+    text-transform: capitalize;
 }
 
-button {
+#filterBtn {
     background-color: transparent;
     border: solid 1px rgb(180, 180, 180);
     height: 28px;
@@ -260,4 +270,25 @@ button {
 
 input {
     margin-bottom: 10px;
+}
+
+/* PAGES */
+
+.pages {
+    text-align: center;
+    position: relative;
+    width: 65vw;
+    left: 25vw;
+    bottom: -78vh;
+}
+
+.pageBtn{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    margin: 0px 20px 0px 20px;
+}
+
+#pPage {
+    opacity: 0.5;
 }

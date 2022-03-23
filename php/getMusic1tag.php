@@ -8,19 +8,19 @@ $dataArray = (explode(",",$data));
 
 if (empty($dataArray[1]) && empty($dataArray[2])) {
     
-    $sql = "SELECT * FROM `music` WHERE `genre` = '$dataArray[0]'";
+    $sql = "SELECT * FROM `music` WHERE `genre` = '$dataArray[0]' LIMIT 5 OFFSET $dataArray[3]";
 
 }
 
 if (empty($dataArray[2]) && empty($dataArray[0])) {
     
-    $sql = "SELECT * FROM `music` WHERE `mood` = '$dataArray[1]'";
+    $sql = "SELECT * FROM `music` WHERE `mood` = '$dataArray[1]' LIMIT 5 OFFSET $dataArray[3]";
 
 }
 
 if (empty($dataArray[0]) && empty($dataArray[1])) {
     
-    $sql = "SELECT * FROM `music` WHERE `instrument` = '$dataArray[2]'";
+    $sql = "SELECT * FROM `music` WHERE `instrument` = '$dataArray[2]' LIMIT 5 OFFSET $dataArray[3]";
 
 }
 
